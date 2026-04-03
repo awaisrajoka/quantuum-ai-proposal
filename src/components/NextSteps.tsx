@@ -17,7 +17,7 @@ export default function NextSteps() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "100px" }}
           transition={{ duration: 0.6 }}
         >
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent mb-4">
@@ -31,7 +31,7 @@ export default function NextSteps() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "100px" }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-12 max-w-2xl mx-auto space-y-4"
         >
@@ -40,7 +40,7 @@ export default function NextSteps() {
               key={step.num}
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "100px" }}
               transition={{ duration: 0.5, delay: 0.1 * i }}
               className="flex items-start gap-4 text-left bg-white/[0.03] border border-white/10 rounded-xl px-6 py-4"
             >
@@ -55,7 +55,7 @@ export default function NextSteps() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "100px" }}
           transition={{ duration: 0.6, delay: 0.5 }}
           className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4"
         >

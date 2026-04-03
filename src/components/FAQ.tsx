@@ -46,7 +46,7 @@ function FAQItem({ faq, index }: { faq: (typeof faqs)[0]; index: number }) {
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-100px" }}
+      viewport={{ once: true, margin: "100px" }}
       transition={{ duration: 0.6, delay: index * 0.05 }}
       className="border-b border-white/5 last:border-0"
     >
@@ -91,7 +91,7 @@ export default function FAQ() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "100px" }}
           transition={{ duration: 0.6 }}
         >
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent mb-4">
