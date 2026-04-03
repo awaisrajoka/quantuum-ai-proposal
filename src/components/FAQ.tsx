@@ -39,15 +39,11 @@ const faqs = [
   },
 ];
 
-function FAQItem({ faq, index }: { faq: (typeof faqs)[0]; index: number }) {
+function FAQItem({ faq }: { faq: (typeof faqs)[0] }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "100px" }}
-      transition={{ duration: 0.6, delay: index * 0.05 }}
+    <div
       className="border-b border-white/5 last:border-0"
     >
       <button
@@ -80,7 +76,7 @@ function FAQItem({ faq, index }: { faq: (typeof faqs)[0]; index: number }) {
           </motion.div>
         )}
       </AnimatePresence>
-    </motion.div>
+    </div>
   );
 }
 
@@ -88,23 +84,18 @@ export default function FAQ() {
   return (
     <section id="faq" className="py-20 md:py-28 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "100px" }}
-          transition={{ duration: 0.6 }}
-        >
+        <div>
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent mb-4">
             {"// FAQ"}
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white">
             Frequently Asked Questions
           </h2>
-        </motion.div>
+        </div>
 
         <div className="mt-12 bg-white/[0.03] border border-white/10 rounded-xl px-6 md:px-8">
           {faqs.map((faq, i) => (
-            <FAQItem key={i} faq={faq} index={i} />
+            <FAQItem key={i} faq={faq} />
           ))}
         </div>
       </div>

@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Zap, Database, Bot, ArrowRight } from "lucide-react";
 
 const expansions = [
@@ -32,43 +31,30 @@ export default function Scalability() {
   return (
     <section id="scalability" className="py-20 md:py-28 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "100px" }}
-          transition={{ duration: 0.6 }}
-        >
+        <div>
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent mb-4">
             {"// FUTURE-READY"}
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white">
             Built for What Comes Next.
           </h2>
-        </motion.div>
+        </div>
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-          {expansions.map((card, i) => (
-            <motion.div
+          {expansions.map((card) => (
+            <div
               key={card.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "100px" }}
-              transition={{ duration: 0.6, delay: i * 0.1 }}
               className="bg-white/[0.03] border border-white/10 rounded-xl p-6 md:p-8 hover:border-white/20 transition-colors"
             >
               <card.icon className="text-accent mb-4" size={24} />
               <h3 className="text-white font-semibold text-lg mb-3">{card.title}</h3>
               <p className="text-white/60 text-sm leading-relaxed">{card.desc}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
 
         {/* Roadmap */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "100px" }}
-          transition={{ duration: 0.6, delay: 0.3 }}
+        <div
           className="mt-16"
         >
           <h3 className="text-xl font-semibold text-white mb-8">Evolution Roadmap</h3>
@@ -93,7 +79,7 @@ export default function Scalability() {
               </div>
             ))}
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

@@ -1,7 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
-
 const archLayers = [
   {
     label: "PRESENTATION LAYER",
@@ -42,12 +40,7 @@ export default function Architecture() {
   return (
     <section id="architecture" className="py-20 md:py-28 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "100px" }}
-          transition={{ duration: 0.6 }}
-        >
+        <div>
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent mb-4">
             {"// ARCHITECTURE"}
           </p>
@@ -57,14 +50,10 @@ export default function Architecture() {
           <p className="mt-4 text-lg text-white/60 max-w-2xl">
             The platform is designed around structured, governed entities — not dashboard logic.
           </p>
-        </motion.div>
+        </div>
 
         {/* Architecture Diagram */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "100px" }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+        <div
           className="mt-16 space-y-0"
         >
           {archLayers.map((layer, li) => (
@@ -97,14 +86,10 @@ export default function Architecture() {
               </div>
             </div>
           ))}
-        </motion.div>
+        </div>
 
         {/* Tech Stack Grid */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "100px" }}
-          transition={{ duration: 0.6, delay: 0.3 }}
+        <div
           className="mt-16"
         >
           <h3 className="text-xl font-semibold text-white mb-6">Technology Stack</h3>
@@ -121,7 +106,7 @@ export default function Architecture() {
               </div>
             ))}
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

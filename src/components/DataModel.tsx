@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Database, Clock, Brain, ArrowRight } from "lucide-react";
 
 const cards = [
@@ -34,43 +33,30 @@ export default function DataModel() {
   return (
     <section id="data-model" className="py-20 md:py-28 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "100px" }}
-          transition={{ duration: 0.6 }}
-        >
+        <div>
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent mb-4">
             {"// DATA MODEL"}
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white">
             Why PostgreSQL on Azure.
           </h2>
-        </motion.div>
+        </div>
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-          {cards.map((card, i) => (
-            <motion.div
+          {cards.map((card) => (
+            <div
               key={card.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "100px" }}
-              transition={{ duration: 0.6, delay: i * 0.1 }}
               className="bg-white/[0.03] border border-white/10 rounded-xl p-6 md:p-8 hover:border-white/20 transition-colors"
             >
               <card.icon className="text-accent mb-4" size={24} />
               <h3 className="text-white font-semibold text-lg mb-3">{card.title}</h3>
               <p className="text-white/60 text-sm leading-relaxed">{card.desc}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
 
         {/* Data Lineage Flow */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "100px" }}
-          transition={{ duration: 0.6, delay: 0.3 }}
+        <div
           className="mt-16"
         >
           <h3 className="text-xl font-semibold text-white mb-6">Data Lineage Flow</h3>
@@ -88,7 +74,7 @@ export default function DataModel() {
               ))}
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

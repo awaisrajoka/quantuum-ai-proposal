@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Layers, GitBranch, Lock, AlertTriangle } from "lucide-react";
 
 const cards = [
@@ -30,12 +29,7 @@ export default function Problem() {
   return (
     <section id="problem" className="py-20 md:py-28 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "100px" }}
-          transition={{ duration: 0.6 }}
-        >
+        <div>
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent mb-4">
             {"// THE CHALLENGE"}
           </p>
@@ -45,37 +39,29 @@ export default function Problem() {
           <p className="mt-4 text-lg text-white/60 max-w-2xl">
             Operational systems generate signals. But signals without structured follow-through are just noise.
           </p>
-        </motion.div>
+        </div>
 
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6">
-          {cards.map((card, i) => (
-            <motion.div
+          {cards.map((card) => (
+            <div
               key={card.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "100px" }}
-              transition={{ duration: 0.6, delay: i * 0.1 }}
               className="bg-white/[0.03] border border-white/10 rounded-xl p-6 md:p-8 hover:border-white/20 transition-colors"
             >
               <card.icon className="text-accent mb-4" size={24} />
               <h3 className="text-white font-semibold text-lg mb-2">{card.title}</h3>
               <p className="text-white/60 leading-relaxed">{card.desc}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "100px" }}
-          transition={{ duration: 0.6, delay: 0.4 }}
+        <div
           className="mt-16 bg-white/[0.03] border border-white/10 rounded-xl p-6 md:p-8"
         >
           <p className="text-white/70 italic leading-relaxed text-lg">
             &ldquo;We are not looking for someone to build screens. We are looking for someone to build the foundation of a platform.&rdquo;
           </p>
           <p className="mt-3 text-accent font-mono text-sm">— Quantuum AI Tender</p>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Cloud, Shield, Lock, FileSearch, Code, Settings } from "lucide-react";
 
 const items = [
@@ -40,34 +39,25 @@ export default function Security() {
   return (
     <section id="security" className="py-20 md:py-28 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "100px" }}
-          transition={{ duration: 0.6 }}
-        >
+        <div>
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent mb-4">
             {"// SECURITY"}
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white">
             Your Platform. Your Infrastructure. Your Data.
           </h2>
-        </motion.div>
+        </div>
 
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {items.map((item, i) => (
-            <motion.div
+          {items.map((item) => (
+            <div
               key={item.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "100px" }}
-              transition={{ duration: 0.6, delay: i * 0.08 }}
               className="bg-white/[0.03] border border-white/10 rounded-xl p-6 md:p-8 hover:border-white/20 transition-colors"
             >
               <item.icon className="text-accent mb-4" size={24} />
               <h3 className="text-white font-semibold text-lg mb-2">{item.title}</h3>
               <p className="text-white/60 text-sm leading-relaxed">{item.desc}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

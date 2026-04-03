@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Code, Target, ShieldCheck } from "lucide-react";
 
 const roles = [
@@ -39,28 +38,19 @@ export default function WorkingModel() {
   return (
     <section id="working-model" className="py-20 md:py-28 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "100px" }}
-          transition={{ duration: 0.6 }}
-        >
+        <div>
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent mb-4">
             {"// HOW WE WORK"}
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white">
             The Strike Team Protocol.
           </h2>
-        </motion.div>
+        </div>
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-          {roles.map((role, i) => (
-            <motion.div
+          {roles.map((role) => (
+            <div
               key={role.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "100px" }}
-              transition={{ duration: 0.6, delay: i * 0.1 }}
               className="bg-white/[0.03] border border-white/10 rounded-xl p-6 md:p-8 hover:border-white/20 transition-colors"
             >
               <role.icon className="text-accent mb-4" size={24} />
@@ -71,16 +61,12 @@ export default function WorkingModel() {
                 </span>
               </div>
               <p className="text-white/60 text-sm leading-relaxed">{role.desc}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
 
         {/* Working Details */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "100px" }}
-          transition={{ duration: 0.6, delay: 0.3 }}
+        <div
           className="mt-12 bg-white/[0.03] border border-white/10 rounded-xl overflow-hidden"
         >
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-white/5">
@@ -93,7 +79,7 @@ export default function WorkingModel() {
               </div>
             ))}
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

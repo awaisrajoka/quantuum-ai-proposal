@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Check, ArrowRight } from "lucide-react";
 
 const pipeline = ["KPI LAYER", "REPORTING LAYER", "DATA & API LAYER", "ACTION LAYER"];
@@ -64,12 +63,7 @@ export default function Solution() {
   return (
     <section id="solution" className="py-20 md:py-28 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "100px" }}
-          transition={{ duration: 0.6 }}
-        >
+        <div>
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent mb-4">
             {"// THE SOLUTION"}
           </p>
@@ -79,14 +73,10 @@ export default function Solution() {
           <p className="mt-4 text-lg text-white/60 max-w-2xl">
             Every layer is independently governed, fully traceable, and built for the intelligence engine that comes next.
           </p>
-        </motion.div>
+        </div>
 
         {/* Pipeline */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "100px" }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+        <div
           className="mt-16 flex flex-wrap items-center justify-center gap-2 md:gap-0"
         >
           {pipeline.map((stage, i) => (
@@ -99,17 +89,13 @@ export default function Solution() {
               )}
             </div>
           ))}
-        </motion.div>
+        </div>
 
         {/* Layer Cards */}
         <div className="mt-16 space-y-8">
-          {layers.map((layer, i) => (
-            <motion.div
+          {layers.map((layer) => (
+            <div
               key={layer.num}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "100px" }}
-              transition={{ duration: 0.6, delay: i * 0.1 }}
               className="bg-white/[0.03] border border-white/10 rounded-xl p-6 md:p-8"
             >
               <div className="flex flex-col md:flex-row md:items-start gap-6">
@@ -134,7 +120,7 @@ export default function Solution() {
                   </ul>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
