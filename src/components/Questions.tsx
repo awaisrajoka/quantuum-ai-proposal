@@ -101,7 +101,7 @@ export default function Questions() {
             ))}
           </div>
 
-          <div className="mt-12 flex flex-col sm:flex-row items-center gap-4">
+          <div className="mt-12 flex justify-center">
             <a
               href="https://cal.com/hamad/intro"
               target="_blank"
@@ -109,12 +109,6 @@ export default function Questions() {
               className="bg-accent text-black rounded-lg px-8 py-3 font-medium hover:brightness-110 transition text-center"
             >
               Book Architecture Call
-            </a>
-            <a
-              href="mailto:hello@bearplex.com"
-              className="bg-transparent border border-white/20 text-white rounded-lg px-6 py-3 hover:bg-white/5 transition text-center"
-            >
-              Reply to William
             </a>
           </div>
         </div>

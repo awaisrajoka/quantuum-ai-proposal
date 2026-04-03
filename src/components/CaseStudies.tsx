@@ -50,9 +50,12 @@ export default function CaseStudies() {
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {cases.map((c) => (
-            <div
+            <a
               key={c.name}
-              className="group bg-white/[0.03] border border-white/10 rounded-xl p-6 md:p-8 hover:border-accent/30 transition-all duration-300"
+              href="https://bearplex.com/case-studies"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white/[0.03] border border-white/10 rounded-xl p-6 md:p-8 hover:border-accent/30 transition-all duration-300 block"
             >
               <div className="flex items-start justify-between mb-3">
                 <span className="font-mono text-xs uppercase tracking-wider text-accent">
@@ -72,7 +75,7 @@ export default function CaseStudies() {
                   </span>
                 ))}
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
