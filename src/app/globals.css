@@ -4,6 +4,15 @@
 
 html { scroll-behavior: smooth; }
 body { background: #050505; color: rgba(255,255,255,0.7); }
+
+/* Fallback: ensure all Framer Motion elements become visible after 2s
+   even if IntersectionObserver doesn't fire (e.g. direct anchor nav) */
+@keyframes forceVisible {
+  to { opacity: 1 !important; transform: none !important; }
+}
+[style*="opacity: 0"] {
+  animation: forceVisible 0.6s ease-out 2s forwards;
+}
 ::selection { background: rgba(45,212,160,0.3); color: #fff; }
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #050505; }
