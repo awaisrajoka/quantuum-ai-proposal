@@ -34,7 +34,7 @@ export default function Commercial() {
           >
             <div className="flex flex-col sm:flex-row sm:items-end gap-4 mb-8">
               <div>
-                <p className="text-white/40 text-sm mb-1">MVP Development — Fixed Price</p>
+                <p className="text-white/40 text-sm mb-1">MVP Development - Standard Rate</p>
                 <p className="text-5xl md:text-6xl font-bold text-accent">$15,000</p>
               </div>
               <p className="text-white/40 text-sm sm:mb-2">USD / one-time</p>
@@ -55,12 +55,12 @@ export default function Commercial() {
               className="bg-white/[0.03] border border-white/10 rounded-xl p-6 md:p-8"
             >
               <span className="inline-block bg-accent/10 border border-accent/20 rounded-full px-3 py-1 text-xs font-mono text-accent uppercase tracking-wider mb-4">
-                Early Commitment
+                Discounted Rate
               </span>
               <p className="text-3xl font-bold text-white mb-1">$11,200</p>
-              <p className="text-white/40 text-sm mb-3">Save $3,800 with upfront commitment</p>
+              <p className="text-white/40 text-sm mb-3">Ballpark estimate - final quote confirmed on call</p>
               <p className="text-white/50 text-xs leading-relaxed">
-                Available when contract is signed within 14 days of proposal delivery. Same scope, same timeline, same quality.
+                Once we align on final scope and requirements during the architecture walkthrough, we lock in this rate. Same scope, same timeline, same quality.
               </p>
             </div>
 
@@ -71,7 +71,7 @@ export default function Commercial() {
                 Ongoing Support
               </span>
               <p className="text-3xl font-bold text-white mb-1">$2,000</p>
-              <p className="text-white/40 text-sm mb-3">per month — Guardian Plan</p>
+              <p className="text-white/40 text-sm mb-3">per month - Guardian Plan</p>
               <p className="text-white/50 text-xs leading-relaxed">
                 Ongoing maintenance, bug fixes, minor enhancements, monitoring, and priority support. Cancel anytime with 30-day notice.
               </p>

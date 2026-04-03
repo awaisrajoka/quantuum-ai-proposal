@@ -6,10 +6,10 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const jetbrains = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jetbrains" });
 
 export const metadata: Metadata = {
-  title: "Quantuum AI MVP — Proposal | BearPlex",
+  title: "Quantuum AI MVP - Proposal | BearPlex",
   description: "BearPlex's technical proposal for the Quantuum AI execution assurance platform MVP.",
   openGraph: {
-    title: "Quantuum AI MVP — Proposal | BearPlex",
+    title: "Quantuum AI MVP - Proposal | BearPlex",
     description: "BearPlex's technical proposal for the Quantuum AI execution assurance platform MVP.",
   },
 };

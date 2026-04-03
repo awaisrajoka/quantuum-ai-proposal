@@ -105,14 +105,14 @@ export default function Delivery() {
                     return (
                       <div
                         key={i}
-                        className={`h-10 flex items-center justify-center text-xs font-medium ${
+                        className={`h-12 flex items-center text-xs font-medium ${
                           inRange
-                            ? `${phase.color}/80 text-white ${isStart ? "rounded-l-lg" : ""} ${isEnd ? "rounded-r-lg" : ""}`
+                            ? `${phase.color}/80 text-white ${isStart ? "rounded-l-lg pl-3" : ""} ${isEnd ? "rounded-r-lg" : ""}`
                             : "bg-transparent"
                         }`}
                       >
                         {isStart && (
-                          <span className="truncate px-2 text-xs">{phase.title}</span>
+                          <span className="whitespace-nowrap text-[11px] leading-tight">{phase.title}</span>
                         )}
                       </div>
                     );

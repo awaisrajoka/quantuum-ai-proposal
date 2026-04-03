@@ -6,7 +6,6 @@ import { ChevronDown } from "lucide-react";
 const stats = [
   { value: "8 Weeks", label: "to MVP" },
   { value: "4 Layers", label: "One Platform" },
-  { value: "$15,000", label: "Fixed Investment" },
 ];
 
 export default function Hero() {
@@ -25,7 +24,7 @@ export default function Hero() {
           className="inline-flex bg-white/5 border border-white/10 rounded-full px-4 py-1.5 text-sm font-medium mb-8"
         >
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-accent">
-            TENDER RESPONSE — APRIL 2026
+            TENDER RESPONSE - APRIL 2026
           </span>
         </motion.div>
 
@@ -46,7 +45,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="mt-6 text-lg md:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed"
         >
-          An execution assurance engine built on governed entities, structured data, and architectural permanence. Not dashboards — the platform beneath them.
+          An execution assurance engine built on governed entities, structured data, and architectural permanence. Not dashboards - the platform beneath them.
         </motion.p>
 
         <motion.div
@@ -72,8 +71,8 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 1.0 }}
           className="mt-16 space-y-1 text-sm text-white/40"
         >
-          <p>Prepared for William McLean — Quantuum AI</p>
-          <p>By Hamad Pervaiz, CEO — BearPlex &middot; April 2026</p>
+          <p>Prepared for William McLean - Quantuum AI</p>
+          <p>By Hamad Pervaiz, CEO - BearPlex &middot; April 2026</p>
         </motion.div>
       </div>
 

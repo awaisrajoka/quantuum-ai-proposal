@@ -7,7 +7,7 @@ const simplify = [
   "Email-based notifications (no SMS/push in MVP)",
   "3 dashboard views (Executive, Asset, Functional)",
   "Manual approval workflow (automated triggers in v2)",
-  "Basic charting (line, bar, gauge — advanced analytics later)",
+  "Basic charting (line, bar, gauge - advanced analytics later)",
 ];
 
 const protect = [

@@ -60,7 +60,7 @@ export default function Problem() {
           <p className="text-white/70 italic leading-relaxed text-lg">
             &ldquo;We are not looking for someone to build screens. We are looking for someone to build the foundation of a platform.&rdquo;
           </p>
-          <p className="mt-3 text-accent font-mono text-sm">— Quantuum AI Tender</p>
+          <p className="mt-3 text-accent font-mono text-sm">- Quantuum AI Tender</p>
         </div>
       </div>
     </section>

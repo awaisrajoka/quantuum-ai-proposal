@@ -9,7 +9,7 @@ const layers = [
     num: "01",
     title: "KPI Operating Layer",
     tag: "Governed Intelligence",
-    desc: "Central KPI library where every metric is a governed object — defined, owned, thresholded, and auditable.",
+    desc: "Central KPI library where every metric is a governed object - defined, owned, thresholded, and auditable.",
     items: [
       "Central KPI library with governed objects",
       "Manual-first input with structured forms",

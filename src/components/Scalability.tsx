@@ -6,12 +6,12 @@ const expansions = [
   {
     icon: Zap,
     title: "From Manual to Intelligent",
-    desc: "The MVP starts with manual input. But every KPI object is API-ready from day one. When you connect CMMS, ERP, or IMS — the KPIs auto-populate without changing the data model.",
+    desc: "The MVP starts with manual input. But every KPI object is API-ready from day one. When you connect CMMS, ERP, or IMS - the KPIs auto-populate without changing the data model.",
   },
   {
     icon: Database,
     title: "From KPIs to Operational Data",
-    desc: "The entity model supports any governed data type — not just KPIs. Safety observations, maintenance logs, incident reports — all can become first-class entities.",
+    desc: "The entity model supports any governed data type - not just KPIs. Safety observations, maintenance logs, incident reports - all can become first-class entities.",
   },
   {
     icon: Bot,

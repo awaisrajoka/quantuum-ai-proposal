@@ -6,13 +6,13 @@ const cases = [
   {
     name: "Vertex360",
     category: "NDIS & Disability Management",
-    desc: "End-to-end NDIS platform managing participant plans, service bookings, incident reporting, and compliance. Built with governed entities and full audit trails — the same architectural pattern proposed for Quantuum AI.",
+    desc: "End-to-end NDIS platform managing participant plans, service bookings, incident reporting, and compliance. Built with governed entities and full audit trails - the same architectural pattern proposed for Quantuum AI.",
     metrics: ["50+ Providers", "10K+ Participants", "Full NDIS Compliance"],
   },
   {
     name: "PeoplePlus",
     category: "Workforce & Employment Services",
-    desc: "National employment services platform with KPI dashboards, case management, and outcome tracking across 200+ sites. Real-time reporting with RAG indicators — direct precedent for the Quantuum reporting layer.",
+    desc: "National employment services platform with KPI dashboards, case management, and outcome tracking across 200+ sites. Real-time reporting with RAG indicators - direct precedent for the Quantuum reporting layer.",
     metrics: ["200+ Sites", "Real-Time KPIs", "Government Reporting"],
   },
   {
@@ -24,13 +24,13 @@ const cases = [
   {
     name: "Odus Cloud",
     category: "Operational Data Platform",
-    desc: "Cloud-native operational data platform for industrial clients. API ingestion from SCADA, CMMS, and ERP systems with field mapping and data lineage — the exact pattern for Quantuum's Data & API Layer.",
+    desc: "Cloud-native operational data platform for industrial clients. API ingestion from SCADA, CMMS, and ERP systems with field mapping and data lineage - the exact pattern for Quantuum's Data & API Layer.",
     metrics: ["Industrial IoT", "API Ingestion", "Data Lineage"],
   },
   {
     name: "Scale Mediation",
     category: "Legal Tech & Dispute Resolution",
-    desc: "Digital mediation platform with structured workflows, document management, and outcome tracking. Full action lifecycle with approval chains — mirrors the Quantuum Action Management Layer.",
+    desc: "Digital mediation platform with structured workflows, document management, and outcome tracking. Full action lifecycle with approval chains - mirrors the Quantuum Action Management Layer.",
     metrics: ["Workflow Engine", "Document Mgmt", "Audit Trail"],
   },
 ];

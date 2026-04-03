@@ -11,7 +11,7 @@ const items = [
   {
     icon: Shield,
     title: "RBAC",
-    desc: "Role-based access control at every layer. Admin, Manager, Operator, Viewer — fully configurable.",
+    desc: "Role-based access control at every layer. Admin, Manager, Operator, Viewer - fully configurable.",
   },
   {
     icon: Lock,
@@ -21,7 +21,7 @@ const items = [
   {
     icon: FileSearch,
     title: "Full Audit Trail",
-    desc: "Every action, every change, every login — logged with timestamp, user, and before/after state.",
+    desc: "Every action, every change, every login - logged with timestamp, user, and before/after state.",
   },
   {
     icon: Code,

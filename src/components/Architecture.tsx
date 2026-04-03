@@ -48,7 +48,7 @@ export default function Architecture() {
             Entity-Driven. Not UI-Driven.
           </h2>
           <p className="mt-4 text-lg text-white/60 max-w-2xl">
-            The platform is designed around structured, governed entities — not dashboard logic.
+            The platform is designed around structured, governed entities - not dashboard logic.
           </p>
         </div>
 

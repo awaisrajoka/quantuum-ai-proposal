@@ -12,8 +12,7 @@ import CaseStudies from "@/components/CaseStudies";
 import WorkingModel from "@/components/WorkingModel";
 import Ownership from "@/components/Ownership";
 import Commercial from "@/components/Commercial";
-import FAQ from "@/components/FAQ";
-import NextSteps from "@/components/NextSteps";
+import Questions from "@/components/Questions";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -34,8 +33,7 @@ export default function Home() {
         <WorkingModel />
         <Ownership />
         <Commercial />
-        <FAQ />
-        <NextSteps />
+        <Questions />
       </main>
       <Footer />
     </>

@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const links = [
   { label: "Problem", href: "#problem" },
@@ -11,7 +12,7 @@ const links = [
   { label: "Timeline", href: "#delivery" },
   { label: "Impact", href: "#scalability" },
   { label: "Case Studies", href: "#case-studies" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Questions", href: "#questions" },
 ];
 
 export default function Nav() {
@@ -36,9 +37,7 @@ export default function Nav() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 flex items-center justify-between h-16">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2.5">
-          <div className="w-8 h-8 rounded-full bg-accent flex items-center justify-center text-black font-bold text-sm">
-            B
-          </div>
+          <Image src="/bearplex-logo.jpg" alt="BearPlex" width={32} height={32} className="rounded-full" />
           <span className="text-white font-semibold text-sm tracking-wide">BearPlex</span>
         </a>
 
